@@ -5,6 +5,9 @@ module.exports = async function(template, opts) {
   const page = await browser.newPage();
   await page.setContent(template);
   await page.setViewport(opts.viewport);
+  if (opts.waitForFunction) {
+    await page.waitForFunction(opts.waitForFunction);
+  }
   const image = await page.screenshot(opts.image);
   browser.close();
 

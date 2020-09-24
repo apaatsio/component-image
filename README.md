@@ -40,7 +40,9 @@ options = {
     path: undefined,
   },
   // Options that are passed to Puppeteer
-  puppeteerOptions: {}
+  puppeteerOptions: {},
+  // Function that is passed to Puppeteer page.waitForFunction()
+  waitForFunction: undefined
 }
 ```
 
