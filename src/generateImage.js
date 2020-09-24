@@ -1,5 +1,3 @@
-const path = require('path');
-const puppeteer = require('puppeteer');
 const merge = require('lodash.merge');
 
 const renderTemplate = require('./lib/renderTemplate');
